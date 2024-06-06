@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Non veg items</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const returnHomeButton = document.getElementById('returnHomeButton');
+            returnHomeButton.addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+
+            const predictButtons = document.querySelectorAll('.predict');
+            predictButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    window.location.href = 'preduct.html';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="Home">
+        <h1>NON-VEG FOOD ITEMS </h1>
+    </header>
+    <nav>
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">Specials</a>
+        <!-- <a href="preduct.html" class="link">Predict</a> -->
+        <a href="#About" class="link">About</a>
+        <a href="#Contact" class="link">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-front" style="background-image: url(./pic1.jpg);">
+                    <p class="sub-title">Non veg</p>
+                    <h1 class="title">CHICKEN</h1>
+                    <!-- <p class="sub-title">2023</p> -->
+                </div>
+                <div class="card-back" style="background-image: url(./p1.jpeg);">
+                    <div class="back-title">Chicken</div>
+                    <div class="Food Info">
+                        Indian cuisine has a large amount of regional variation, with many variations on the basic chicken curry recipe. Indian chicken curry typically starts with whole spices, heated in oil. A sauce is then made with onions, ginger, garlic, and tomatoes, and powdered spices. Bone-in pieces of chicken are then added to the sauce, and simmered until cooked through.In south India, coconut and curry leaves are also common ingredients.Chicken curry is usually garnished with coriander leaves, and served with rice or roti.
+                    </div>
+                    <button class="Delicious"><span>Delicious</span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-front" style="background-image: url(./pic2.jpg);">
+                    <p class="sub-title">Non vegs</p>
+                    <h1 class="title">Mutton</h1>
+                    <!-- <p class="sub-title">2019</p> -->
+                </div>
+                <div class="card-back" style="background-image: url(./p2.jpeg);">
+                    <div class="back-title">Mutton</div>
+                    <div class="food Info">
+                        Mutton curry (also referred to as kosha mangsho, lamb curry, or goat curry) is a dish that is prepared from goat meat (or sometimes lamb meat) and vegetables.The dish is found in different variations across all states, countries and regions of the Indian subcontinent and the Caribbean.
+                    </div>
+                    <button class="Delicious"><span>Delicious</span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-front" style="background-image: url(./pic3.jpeg);">
+                    <p class="sub-title">Non veg</p>
+                    <h1 class="title">Fish</h1>
+                    <!-- <p class="sub-title">2023</p> -->
+                </div>
+                <div class="card-back" style="background-image: url(./p3.jpeg);">
+                     <div class="back-title">Fish</div> 
+                    <div class="food Info">
+                        This Fish Curry is satisfying, nutritious and packed with a burst of Indian flavors. Onions, tomatoes, spices & herbs enrich the taste & aroma of this Fish curry that is sure to delight the entire family. Chapati, roti, Naan or a bowl of steaming hot rice with this Fish Masala is comfort food at its best!
+                    </div>
+                    <button class="Delicious"><span>Delicious</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div id="About" class="container1">
+        <div class="about-image">
+            <img src="a1.jpeg" id="about-image" alt="About Image">
+        </div>
+        <div class="about-content">
+            <h1>About Non-veg items</h1>
+            <p>Non-vegetarian food (in Indian English sometimes shortened to non-veg food) contains meat (red meat, poultry, seafood, or the flesh of any other animal), and sometimes, eggs. The term is common in India, but not usual elsewhere. In the generally vegetarian environment of India, restaurants offering meat and fish usually have a "non-vegetarian" section of their menu, and may include the term (typically as "Veg and Non-veg") in their name-boards and advertising. When describing people, non-vegetarians eat meat and/or eggs, as opposed to vegetarians. But in India, consumption of dairy foods is usual for both groups.
+
+                The diet, non-vegetarianism is the majority human diet in the world (including India).Non-vegetarians are also called omnivores in nutritional science.</p>
+            <button id="returnHomeButton"><span>Return Home</span></button>
+        </div>
+    </div>
+    <br>
+
+    <div id="Contact">
+        <div class="contat-detail">
+            <h2><u>Contact Information:</u></h2><br>
+            <ol type="none">
+                <li><strong>Contact Name:</strong>Surya</li>
+                <li><strong>Email:</strong> <a href="mailto:infovvar.com">abc123@xsd.com</a></li>
+                <li><strong>Phone:</strong> +91 8754389056</li>
+                <li><strong>Address:</strong>  Hyderabad, India</li>
+            </ol>
+            <!-- <button id="returnHomeButton"><span>Return Home</span></button> -->
+        </div>
+        <div class="con-image">
+            <img src="c1.jpeg" id="con-image" alt="Contact Image">
+        </div>
+    </div>
+</body>
+</html>
